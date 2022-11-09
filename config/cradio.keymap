@@ -35,7 +35,7 @@
         };
         combo_four {
             timeout-ms = <50>;
-            key-positions = <4 5>;
+            key-positions = <3 4>;
             bindings = <&kp N4>;
         };
         combo_six {
@@ -60,37 +60,37 @@
         };
         combo_space {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <13 16>;
             bindings = <&kp SPC>;
         };
         combo_bracketl {
             timeout-ms = <50>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             bindings = <&kp LPAR>;
         };
         combo_bracketr {
             timeout-ms = <50>;
-            key-positions = <19 20>;
+            key-positions = <18 19>;
             bindings = <&kp RPAR>;
         };
         combo_bracesl {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <13 14>;
             bindings = <&kp LBKT>;
         };
         combo_bracesr {
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <17 18>;
             bindings = <&kp RBKT>;
         };
         combo_curlyl {
             timeout-ms = <50>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
             bindings = <&kp LBRC>;
         };
         combo_curlyr {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             bindings = <&kp RBRC>;
         };
         combo_semicolon {
@@ -98,6 +98,11 @@
             key-positions = <23 24>;
             bindings = <&kp SEMI>;
         };
+        combo_rest {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&tog 0>;
+        }
 
         
     };
@@ -116,7 +121,7 @@
 		&kp 5 &kp P &kp Y &kp F &kp G 						&kp C &kp R  &kp L    &kp NUM_0   &kp P 
 		&kp A &kp O &kp E &kp U &kp I 			        	        &kp D &kp H &kp T &kp M &kp S
 		&mt LSFT Z &kp Q &kp J &kp K &kp X				        &kp B &kp M  &kp W &kp V &kp Z
-          				&mo 1 &tog 1   				&tog 2 &kp LCTL
+          				&mo LSFT &tog 1   				&tog 2 &kp LCTL
 		>;
 		};
 
