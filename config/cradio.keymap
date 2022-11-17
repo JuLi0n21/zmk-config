@@ -18,87 +18,87 @@
 
     combos {
         compatible = "zmk,combos";
-       combo_zero {
+       combo_zero { //			2
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp N0>;
-        };
-        combo_one {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp N1>;
-        };
-        combo_three {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
             bindings = <&kp N2>;
         };
-        combo_four {
+        combo_two { //			3
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <1 2>;
             bindings = <&kp N3>;
         };
-        combo_six {
+        combo_three { //		4
             timeout-ms = <50>;
-            key-positions = <6 7>;
+            key-positions = <2 3>;
+            bindings = <&kp N4>;
+        };
+        combo_four { //			5
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp N5>;
+        };
+        combo_five { //			6	
+            timeout-ms = <50>;
+            key-positions = <5 6>;
             bindings = <&kp N6>;
         };
-        combo_seven {
+	combo_six { //			7
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <6 7>;
             bindings = <&kp N7>;
         };
-        combo_eight {
+        combo_seven { //		8
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             bindings = <&kp N8>;
         };
-        combo_nine {
+        combo_eight { //		9
             timeout-ms = <50>;
-            key-positions = <9 10>;
+            key-positions = <8 9>;
             bindings = <&kp N9>;
         };
-        combo_space {
+        combo_space { //		SPACE_BAR
             timeout-ms = <50>;
             key-positions = <13 16>;
             bindings = <&kp SPC>;
         };
-        combo_bracketl {
+        combo_bracketl { //		(
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LPAR>;
         };
-        combo_bracketr {
+        combo_bracketr { //		)
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp RPAR>;
         };
-        combo_bracesl {
+        combo_bracesl { //		{
             timeout-ms = <50>;
             key-positions = <13 14>;
             bindings = <&kp LBKT>;
         };
-        combo_bracesr {
+        combo_bracesr { //		}
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RBKT>;
         };
-        combo_curlyl {
+        combo_curlyl { //		]
             timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp LBRC>;
         };
-        combo_curlyr {
+        combo_curlyr { //		[
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp RBRC>;
         };
-        combo_semicolon {
+        combo_semicolon { //		=
             timeout-ms = <50>;
             key-positions = <23 24>;
-            bindings = <&kp SEMI>;
+            bindings = <&kp EQUAL>;
         };
-        combo_rest {
+        combo_rest { //			
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&tog 0>;
@@ -111,14 +111,14 @@
                 compatible = "zmk,keymap";
         //================================DEFAULT_LAYER====================================
         // Key 1| Key 2 | Key 3 | Key 4 | Key 5 | Key 10 | Key 9 | Key 8 | Key 7 | Key 6 | 
-        //   5  |  p    | y     | f     | g     |  c     | r     |  l    |  0    |       |
+        //   1  |  p    | y     | f     | g     |  c     | r     |  l    |  ;    |  0    |
         //   a  |  o    | e     | u     | i     | d      | h     | t     | n     |  s    |
         //      | q     |  j    |   k   |  x    | b      | m     | w     |   v   |  z    |
         //      |       |       | Shift |layer1 | layer2 | cntrl |       |       |       |
 
        		default_layer {
 		bindings = <
-		&kp NUM_5 &kp P &kp Y &kp F &kp G 						&kp C &kp R  &kp L    &kp NUM_0   &kp P 
+		&kp NUM_1 &kp P &kp Y &kp F &kp G 						&kp C &kp R  &kp L    &kp SEMI   &kp NUM_0 
 		&kp A &kp O &kp E &kp U &kp I 			        	        &kp D &kp H &kp T &kp M &kp S
 		&mt LSFT Z &kp Q &kp J &kp K &kp X				        &kp B &kp M  &kp W &kp V &kp Z
           				&kp LSFT &trans   				&trans &kp LCTL
