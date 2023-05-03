@@ -193,7 +193,7 @@
         //      |       |   Q   |   J   |   K   |   X   |               |   B   |   M   |   W   |   V   |   Z   |
                 &mt LSFT Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
         //                              | lsft  |       |               |       | lctrl |
-	                                    &kp LSFT &trans   				&to 1 &kp LCTL
+	                                    &kp LSFT &trans   				&to 2 &kp LCTL
         >;
 		};
 		
