@@ -137,7 +137,7 @@
         combo_rest { //			
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
         };
 
         // Specialkeys 
@@ -193,7 +193,7 @@
         //      |       |   Q   |   J   |   K   |   X   |               |   B   |   M   |   W   |   V   |   Z   |
                 &mt LSFT Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
         //                              | lsft  |       |               |       | lctrl |
-	                                    &kp LSFT &trans   				&trans &kp LCTL
+	                                    &kp LSFT &trans   				&to 1 &kp LCTL
         >;
 		};
 		
@@ -204,10 +204,10 @@
         //      |       |       |       |       |        |       |       |       |       |
         //      |       |       |       |       |        |       |       |       |       |
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		&none &none &none BT_CLR &bt BT_SEL 0   	&bt BT_SEL 3 BT_NXT &none &none &none 
+		&none &none &none &none &bt BT_SEL 1        &bt BT_SEL 4 BT_PRV &none &none &none
+        &none &none &none &none &bt BT_SEL 2       &none &none &none &none &none
+					      &none &none       &none &none 
 		>;
 		};	
 		
