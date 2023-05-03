@@ -114,7 +114,7 @@
             key-positions = <26 27>;
             bindings = <&kp PLUS>;
         };
-         combo_devide { //	*
+         combo_multiply { //	*
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp DOUBLE_QUOTES>;
@@ -172,21 +172,15 @@
         //      |   A   |   O   |   E   |   U   |   I   |               |   D   |   H   |   T   |   N   |   S   |
         //      |  TAB  |   Q   |   J   |   K   |   X   |               |   B   |   M   |   W   |   V   |   Z   |
         //                              | lsft  |       |               |       | lctrl |
-	 
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
 		            bindings = <
-        //      ========================================= DEFAULT_LAYER =========================================
-        //      |   0   |   P   |   Y   |   F   |   G   |               | SPACE |   C   |   R   |   L   |   1   |
-                &kp NUM_0 &kp P   &kp Y    &kp F  &kp G 			    &kp SPACE &kp C &kp R   &kp L &kp NUM_1 
-        //      |   A   |   O   |   E   |   U   |   I   |               |   D   |   H   |   T   |   N   |   S   |
-                &kp A   &kp O   &kp E   &kp U   &kp I 			        &kp D   &kp H   &kp T   &kp N   &kp S
-        //      |  TAB  |   Q   |   J   |   K   |   X   |               |   B   |   M   |   W   |   V   |   Z   |
+                &kp NUM_0 &kp P &kp Y &kp F &kp G 			    &kp SPACE &kp C &kp R   &kp L &kp NUM_1 
+                &kp A &kp O &kp E &kp U &kp I 			        &kp D   &kp H   &kp T   &kp N   &kp S
                 &mt TAB Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
-        //                              | lsft  |       |               |       | lctrl |
 	                                    &kp LSFT &none  				&none &kp LCTL
-            >;
+        >;
 		};
 
        		left_layer {
@@ -200,7 +194,7 @@
                 &mt LSFT Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
         //                              | lsft  |       |               |       | lctrl |
 	                                    &kp LSFT &trans   				&trans &kp LCTL
-            >;
+        >;
 		};
 		
 		right_layer {
