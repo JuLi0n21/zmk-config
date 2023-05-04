@@ -179,7 +179,7 @@
                 &kp NUM_0 &kp P &kp Y &kp F &kp G 			    &kp SPACE &kp C &kp R   &kp L &kp NUM_1 
                 &kp A &kp O &kp E &kp U &kp I 			        &kp D   &kp H   &kp T   &kp N   &kp S
                 &mt TAB Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
-	                                    &kp LSFT &none  				&none &kp LCTL
+	                                    &kp LSFT &none  				&to 2 &kp LCTL
         >;
 		};
 
