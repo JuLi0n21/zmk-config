@@ -142,7 +142,7 @@
         combo_i { //			i
             timeout-ms = <50>;
             key-positions = <13 16>;
-            bindings = <&to 0>;
+            bindings = <&kp I>;
         };
 
         // Specialkeys 
