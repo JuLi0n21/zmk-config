@@ -26,22 +26,22 @@
         combo_two { //			4
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp N3>;
+            bindings = <&kp N4>;
         };
         combo_three { //		6
             timeout-ms = <50>;
             key-positions = <2 3>;
-            bindings = <&kp N4>;
+            bindings = <&kp N6>;
         };
         combo_four { //			8
             timeout-ms = <50>;
             key-positions = <3 4>;
-            bindings = <&kp N5>;
+            bindings = <&kp N8>;
         };
         combo_five { //			9	
             timeout-ms = <50>;
             key-positions = <5 6>;
-            bindings = <&kp N6>;
+            bindings = <&kp N9>;
         };
 	    combo_six { //			7
             timeout-ms = <50>;
@@ -51,12 +51,12 @@
         combo_seven { //		5
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp N8>;
+            bindings = <&kp N5>;
         };
         combo_eight { //		3
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp N9>;
+            bindings = <&kp N3>;
         };
     //SPECIAL CHARS
         combo_bracketl { //		(
