@@ -71,7 +71,7 @@
         };
         combo_bracesl { //		{
             timeout-ms = <50>;
-            key-positions = <13 14>;
+            key-positions = <13 15>;
             bindings = <&kp LBKT>;
         };
         combo_bracesr { //		}
@@ -126,7 +126,7 @@
         };
           combo_backspace { //	*
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <13 16>;
             bindings = <&kp BACKSPACE>;
         };
           combo_enter { //	*
@@ -137,6 +137,11 @@
         combo_rest { //			
             timeout-ms = <50>;
             key-positions = <31 32>;
+            bindings = <&to 0>;
+        };
+        combo_rest { //			i
+            timeout-ms = <50>;
+            key-positions = <13 16>;
             bindings = <&to 0>;
         };
 
@@ -177,7 +182,7 @@
                 default_layer {
 		            bindings = <
                 &kp NUM_0 &kp P &kp Y &kp F &kp G 			    &kp SPACE &kp C &kp R   &kp L &kp NUM_1 
-                &kp A &kp O &kp E &kp U &kp I 			        &kp D   &kp H   &kp T   &kp N   &kp S
+                &kp A &kp O &kp E &kp U &none 			        &kp D   &kp H   &kp T   &kp N   &kp S
                 &mt TAB Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
 	                                    &kp LSFT &none  				&to 2 &kp LCTL
         >;
