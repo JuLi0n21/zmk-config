@@ -181,11 +181,11 @@
                 compatible = "zmk,keymap";
                 default_layer {
 		            bindings = <
-                &kp Q &kp W &kp F &kp P &kp G 			                &kp SPACE &kp C &kp R   &kp L &kp NUM_1 
-                &kp A &kp R &kp S &kp T &kp D 			                &kp H  &kp N   &kp E   &kp I   &kp O
+                &kp Q &kp W &kp F &kp P &kp G 			            &kp J &kp L &kp U   &kp Y &kp SPACE
+                &kp A &kp R &kp S &kp T &kp D 			            &kp H  &kp N   &kp E   &kp I   &kp O
                 &mt TAB Z &kp X &kp C &kp V   &kp B				    &kp K   &kp M   &kp 0   &kp 0   &kp 0
-	                                    &kp LSFT &kp 0  				&to 2 &kp LCTL
-        >;
+	                                    &kp LSFT &kp 0  			&to 2 &kp LCTL
+        >;                                                                      
 		};
 
        		left_layer {
