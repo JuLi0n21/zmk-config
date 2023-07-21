@@ -21,7 +21,7 @@
         combo_lock { //			win + l 
             timeout-ms = <50>;
             key-positions = <10 11 12 13>;
-            bindings = <&kp LOCK>;
+            bindings = <&kp K_LOCK>;
         };
         combo_leftsquare { // [
             timeout-ms = <50>;
