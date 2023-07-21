@@ -26,32 +26,32 @@
         combo_leftsquare { // [
             timeout-ms = <50>;
             key-positions = <10 11>;
-            bindings = <&kp LBKT >;
+            bindings = <&kp LBKT>;
         };
         combo_leftcurly { // (
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kp LPAR >;
+            bindings = <&kp LPAR>;
         };
         combo_lefteschwungen { // {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp LBRC >;
+            bindings = <&kp LBRC>;
         };
         combo_rigthgeschwungen { // }
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp RBKC >;
+            bindings = <&kp RBKC>;
         };
         combo_rigthcurly { // )
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp RPAR >;
+            bindings = <&kp RPAR>;
         };
         combo_rigthsquare { // ]
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&kp RBKT >;
+            bindings = <&kp RBKT>;
         };
         combo_backspace { //			2
             timeout-ms = <50>;
