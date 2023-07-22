@@ -28,7 +28,11 @@
             key-positions = <31 32>;
             bindings = <&to 0>;
         };
-      
+          combo_square_leftside {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp LEFT_BRACKET>;
+        };
     };
 
     //Numbers
