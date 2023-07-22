@@ -19,62 +19,62 @@
  combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
          combo_defaultlayer {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <31 32>;
             bindings = <&to 0>;
         };
           combo_square_leftside {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <10 11>;
             bindings = <&kp LEFT_BRACKET>;
         };
         combo_curly_leftside {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <11 12>;
             bindings = <&kp LEFT_PARENTHESIS>;
         };
         combo_brace_leftside {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <12 13>;
             bindings = <&kp LEFT_BRACE>;
         };
         combo_square_rightside {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <18 19>;
             bindings = <&kp RIGHT_BRACKET>;
         };
         combo_curly_rightside {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <17 18>;
             bindings = <&kp RIGHT_PARENTHESIS>;
         };
         combo_brace_rightside {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <18 17>;
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_backspace {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <13 16>;
             bindings = <&kp BACKSPACE>;
         };
         combo_delete {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <12 17>;
             bindings = <&kp DELETE>;
         };
         combo_enter {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <12 17>;
             bindings = <&kp ENTER>;
         };
         combo_win {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <20 21>;
             bindings = <&kp LWIN>;
         };
