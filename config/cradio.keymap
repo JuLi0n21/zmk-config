@@ -103,7 +103,7 @@
         //DEFAULT_LAYER COLEMAK LAYOUT
         //      ========================================= DEFAULT_LAYER =========================================
         //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |SPACE 0|
-        //      |   A   |   R   |   S   |   T   |   D   |               |  H    |  N ⬅ |  E ⬇  |  I ⬆  |  O ⮕ |
+        //      |   A   |   R   |   S   |   T   |   D   |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O   |
         //      |   Z   |   X   |   C   |   V   |   B   |               |   K   |   M ; |  .    |  ,    |  /    |
         //                              | lsft  | RR RR |               | LL LL | lctrl |
         keymap {
@@ -111,7 +111,7 @@
                 default_layer {
 		            bindings = <
                 &mt 1 Q &mt 2 W &mt 3 F &mt 4 P &mt 5 G 			&mt 6 J &mt 7 L &mt 8 U &mt 9 Y &mt 0 SPACE
-                &kp A &kp R &kp S &kp T &kp D 			            &kp H   &mt LEFT N   &mt DOWN E   &mt UP I   &mt RIGHT O
+                &kp A &kp R &kp S &kp T &kp D 			            &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
                 &mt TAB Z &kp X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &kp DOT &kp COMMA &kp SLASH
 	                                    &kp LSFT &to 1  			&to 2 &kp LCTL
         >;                                                                      
