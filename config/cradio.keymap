@@ -46,7 +46,17 @@
         combo_square_rightside {
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
+        };
+        combo_curly_rightside {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
+        };
+        combo_brace_rightside {
+            timeout-ms = <50>;
+            key-positions = <18 17>;
+            bindings = <&kp RIGHT_BRACE>;
         };
     };
 
