@@ -14,19 +14,23 @@
    // tapping_term_ms = <200>;
 };
 
-
 / {
-    combos {
+    
+ combos {
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+         combo_defaultlayer {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&to 0>;
+        };
+      
     };
-};
 
-/ {
     //Numbers
         //      ========================================           =========================================
         //      |       |      |       |       |       |           |       |       |       |       |       |
