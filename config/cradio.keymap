@@ -99,7 +99,7 @@
         //      ========================================= DEFAULT_LAYER =========================================
         //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |SPACE 0|
         //      |   A   |   R   |   S   |   T   |   D   |               |  H    |  N ⬅ |  E ⬇  |  I ⬆  |  O ⮕ |
-        //      |   Z   |   X   |   C   |   V   |   B   |               |   K   |   M ; |  . <  |  ,  > |  / ?  |
+        //      |   Z   |   X   |   C   |   V   |   B   |               |   K   |   M ; |  .    |  ,    |  /    |
         //                              | lsft  | RR RR |               | LL LL | lctrl |
         keymap {
                 compatible = "zmk,keymap";
@@ -108,21 +108,21 @@
                 &mt 1 Q &mt 2 W &mt 3 F &mt 4 P &mt 5 G 			&mt 6 J &mt 7 L &mt 8 U &mt 9 Y &mt 0 SPACE
                 &kp A &kp R &kp S &kp T &kp D 			            &kp H   &mt LEFT N   &mt DOWN E   &mt UP I   &mt RIGHT O
                 &mt TAB Z &kp X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &kp DOT &kp COMMA &kp SLASH
-	                                    &kp LSFT &kp 0  			&to 2 &kp LCTL
+	                                    &kp LSFT &to 1  			&to 2 &kp LCTL
         >;                                                                      
 		};
 
        	left_layer {
         bindings = <
         //      ========================================= LEFT_LAYER =========================================
-        //      |       |       |       |       |       |               |       |       |       |       |      |
-                &kp NUM_0 &kp P   &kp Y    &kp F  &kp G 			    &kp C   &kp R   &kp L   &kp SEMI &kp NUM_0 
-        //      |       |       |       |       |       |               |       |       |       |       |       |
-                &kp A   &kp O   &kp E   &kp U   &kp I 			        &kp D   &kp H   &kp T   &kp M   &kp S
-        //      |       |       |       |       |       |               |       |       |       |       |       |
-                &mt LSFT Z &kp Q &kp J  &kp K   &kp X				    &kp B   &kp M   &kp W   &kp V   &kp Z
+        //      |       |       |       |       |       |               |       |       |   ⬆   |       |      |
+                &kp ESC &kp F12 &kp F13 &kp 14 &kp F15 			        &kp F16 &kp F17 &kp UP &kp F18 &kp F19 
+        //      |       |       |       |       |       |               |       |  ⬅   |  ⬇   |   ⮕  |       |
+                &kp F20   &kp F21   &kp F22   &kp F23   &kp F24 		&none  &kp LEFT &kp DOWN &kp RIGHT &none
+        //      |       |       |       |       |       |               |       |       |      |       |       |
+                &kp TAB &none   &none   &none   &none				    &none   &none   &none  &none  &none
         //                              |       |       |               |       |       |
-	                                    &kp LSFT &trans   				&to 2 &kp LCTL
+	                                    &kp LSFT  &none  				&none   &kp LCTL
         >;
 		};
 		
