@@ -68,6 +68,11 @@
             key-positions = <12 17>;
             bindings = <&kp DELETE>;
         };
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <12 17>;
+            bindings = <&kp ENTER>;
+        };
     };
 
     //Numbers
