@@ -63,6 +63,11 @@
             key-positions = <13 16>;
             bindings = <&kp BACKSPACE>;
         };
+        combo_delete {
+            timeout-ms = <50>;
+            key-positions = <12 17>;
+            bindings = <&kp DELETE>;
+        };
     };
 
     //Numbers
