@@ -33,6 +33,11 @@
             key-positions = <10 11>;
             bindings = <&kp LEFT_BRACKET>;
         };
+        combo_curly_leftside {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp LEFT_PARENTHESIS>;
+        };
     };
 
     //Numbers
