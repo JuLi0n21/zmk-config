@@ -70,7 +70,7 @@
         };
         combo_enter {
             timeout-ms = <20>;
-            key-positions = <12 17>;
+            key-positions = <14 15>;
             bindings = <&kp ENTER>;
         };
         combo_win {
