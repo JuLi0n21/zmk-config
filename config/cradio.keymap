@@ -10,7 +10,7 @@
 
 
 &mt {
-    flavor = "tap-preferred";
+      flavor = "tap-preferred";
    // tapping_term_ms = <200>;
 };
 
@@ -78,11 +78,21 @@
             key-positions = <20 21>;
             bindings = <&kp LWIN>;
         };
-        combo_alt_f4 {
-            timeout-ms = <20>;
-            key-positions = <10 11 12 13>
-             bindings = <&kp ALT, &kp F4>;
-        }
+        combo_minus {
+              timeout-ms = <20>;
+            key-positions = <7 8>;
+            bindings = <&kp MINUS>;
+           }
+         combo_equal {
+              timeout-ms = <20>;
+            key-positions = <7 8>;
+            bindings = <&kp EQUAL>;
+           }
+      //  combo_alt_f4 {
+        //    timeout-ms = <20>;
+          //  key-positions = <10 11 12 13>
+            // bindings = <&kp ALT, &kp F4>;
+        //}
     };
 
     //Numbers
