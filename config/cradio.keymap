@@ -58,11 +58,11 @@
             key-positions = <18 17>;
             bindings = <&kp RIGHT_BRACE>;
         };
-        combo_backspace {
+        /*combo_backspace {
             timeout-ms = <20>;
             key-positions = <13 16>;
             bindings = <&kp BACKSPACE>;
-        };
+        }; */
         combo_delete {
             timeout-ms = <20>;
             key-positions = <12 17>;
@@ -70,7 +70,7 @@
         };
         combo_enter {
             timeout-ms = <20>;
-            key-positions = <14 15>;
+            key-positions = <13 16>;
             bindings = <&kp ENTER>;
         };
         combo_win {
@@ -128,7 +128,7 @@
                 &mt NUM_1 Q &mt NUM_2 W &mt NUM_3 F &mt NUM_4 P &mt NUM_5 G 			&mt NUM_6 J &mt NUM_7 L &mt NUM_8 U &mt NUM_9 Y &mt NUM_0 SPACE
                 &kp A &kp R &kp S &kp T &kp D 			            &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
                 &mt TAB Z &kp X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &kp DOT &kp COMMA &kp SLASH
-	                                    &kp LSFT &to 1  			&to 2 &kp LCTL
+	                                    &kp LSFT &kp BACKSPACE  			&to 2 &kp LCTL
         >;                                                                      
 		};
 
