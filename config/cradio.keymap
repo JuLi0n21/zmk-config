@@ -127,10 +127,10 @@
 		            bindings = <
                 &mt NUM_1 Q &mt NUM_2 W &mt NUM_3 F &mt NUM_4 P &mt NUM_5 G 			&mt NUM_6 J &mt NUM_7 L &mt NUM_8 U &mt NUM_9 Y &mt NUM_0 BACKSPACE
                 &kp A &kp R &kp S &kp T &kp D 			            &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
-                &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &kp COMMA &kp DOT &kp SLASH
+                &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M SINGLE_QUOTE  &mt  COMMA &kp DOT &kp SLASH
 	                                    &kp LSFT &kp SPACE  			&to 2 &kp LCTL
         >;                                                                      
-		};
+		}; 
 
        	left_layer {
         bindings = <
