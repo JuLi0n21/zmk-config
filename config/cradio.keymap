@@ -90,7 +90,7 @@
            };
       //  combo_alt_f4 {
         //    timeout-ms = <20>;
-          //  key-positions = <10 11>
+          //  key-positions = <10 11 12 13>
             // bindings = <&kp ALT, &kp F4>;
         //}
     };
@@ -117,9 +117,9 @@
 
         //DEFAULT_LAYER COLEMAK LAYOUT
         //      ========================================= DEFAULT_LAYER =========================================
-        //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |      0|
-        //      | A HOME|   R   |   S   |   T   | D END |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O   |
-        //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M ; |  , '  |  . `   |  /    |
+        //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |  <- 0|
+        //      | A HOME|   R   |   S   |   T   | D END |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O ;  |
+        //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M ' |  , '  |  . `  |  / | |
         //                              | lsft  | SPACE |               | RSFT | lctrl |
         keymap {
                 compatible = "zmk,keymap";
@@ -127,7 +127,7 @@
 		            bindings = <
                 &mt NUM_1 Q &mt NUM_2 W &mt NUM_3 F &mt NUM_4 P &mt NUM_5 G 			&mt NUM_6 J &mt NUM_7 L &mt NUM_8 U &mt NUM_9 Y &mt NUM_0 BACKSPACE
                 &mt HOME A &kp R &kp S &kp T &mt END D 			            &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
-                &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &kp SLASH
+                &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
 	                                    &kp LSFT &kp SPACE  			&kp LCTL &kp LSFT
         >;                                                                      
 		}; 
