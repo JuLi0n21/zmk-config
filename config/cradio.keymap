@@ -74,7 +74,7 @@
             bindings = <&kp LWIN>;
         };
         MINUS {
-              timeout-ms = <20>;
+            timeout-ms = <20>;
             key-positions = <7 8>;
             bindings = <&kp MINUS>;
            };
@@ -85,39 +85,18 @@
            };
     };
 
-    //Numbers
-        //      ========================================           =========================================
-        //      |       |      |       |       |       |           |       |       |       |       |       |
-        //      |       |      |       |       |       |           |       |       |       |       |       |
-        //      |       |      |       |       |       |           |       |       |       |       |       |
-        //                             |       |       |           |       |       |
-
-        //      =========================================           =========================================
-        //      | Key 0 |   1   |   2   |   3   |   4   |           |   5   |   6   |   7   |   8   |   9   |
-        //      |  10   |  11   |  12   |  13   |  14   |           |  15   |   16  |  17   |  18   |  19   |
-        //      |  20   |  21   |  22   |  23   |  24   |           |  25   |   26  |  27   |  28   |  29   |
-        //                              |  30   |  31   |           |  32   |   33  |
-
-        // KEY COMBOS
-        //      ========================================           =========================================
-        //      |       |      |       |       |       |   DELETE  |       |       |       |       |       |
-        //      |       |      (       [       {       |   bcsp    |       }       ]       )       |       |
-        //      |       |      |       |       |       |   ENTER   |       |       |       |       |       |
-        //                             |       |       | DFT_LAYER |       |       |
-
-        //DEFAULT_LAYER COLEMAK LAYOUT
-        //      ========================================= DEFAULT_LAYER =========================================
-        //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |  <- 0|
-        //      | A HOME|   R   |   S   |   T   | D END |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O ;  |
-        //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M ' |  , '  |  . `  |  / | |
-        //                              | lsft  | SPACE |               | RSFT | lctrl |
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
 		            bindings = <
+        //      ========================================= DEFAULT_LAYER =========================================
+        //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |  <- 0|
                 &mt N1 Q &mt N2 W &mt N3 F &mt N4 P &mt N5 G 			&mt N6 J &mt N7 L &mt N8 U &mt N9 Y &mt N0 BACKSPACE
-                &mt HOME A &kp R &kp S &kp T &mt END D 			            &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
+        //      | A HOME|   R   |   S   |   T   | D END |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O ;  |
+                &mt HOME A &kp R &kp S &kp T &mt END D 			        &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
+        //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M ' |  , '  |  . `  |  / | |
                 &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
+        //                              | lsft  | SPACE |               | RSFT | lctrl |
 	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &kp LSHIFT
         >;                                                                      
 		}; 
@@ -126,9 +105,9 @@
         bindings = <
         //      ========================================= LEFT_LAYER =========================================
         //      |       |       |       |       |       |               |       |       |   ⬆   |       |      |
-                &kp ESC &kp F12 &kp F13 &kp 14 &kp F15 			        &kp F16 &kp F17 &kp UP &kp F18 &kp F19 
+                &kp ESC &kp F12 &kp F13 &kp 14  &kp F15 			    &kp F16 &kp F17 &kp UP &kp F18 &kp F19 
         //      |       |       |       |       |       |               |       |  ⬅   |  ⬇   |   ⮕  |       |
-                &kp F20   &kp F21   &kp F22   &kp F23   &kp F24 		&none  &kp LEFT &kp DOWN &kp RIGHT &none
+                &kp F20 &kp F21 &kp F22 &kp F23 &kp F24 		        &none  &kp LEFT &kp DOWN &kp RIGHT &none
         //      |       |       |       |       |       |               |       |       |      |       |       |
                 &kp TAB &none   &none   &none   &none				    &none   &none   &none  &none  &none
         //                              |       |       |               |       |       |
@@ -137,30 +116,30 @@
 		};
 		
 		right_layer {
-        // Key 0| Key 2 | Key 3 | Key 4 | Key 5 | Key 10 | Key 9 | Key 8 | Key 7 | Key 6 |
-        //      |       |       |       |       |        |       |       |       |       |
-        //      |       |       |       |       |        |       |       |       |       |
-        //      |       |       |       |       |        |       |       |       |       |
-        //      |       |       |       |       |        |       |       |       |       |
 		bindings = <
-		&none &none &none &bt BT_CLR &bt BT_SEL 0   	&bt BT_SEL 3 &bt BT_NXT &none &none &none 
-		&none &none &none &none &bt BT_SEL 1        &bt BT_SEL 4 &bt BT_PRV &none &none &none
-        &none &none &none &none &bt BT_SEL 2       &none &none &none &none &none
-					      &none &none       &none &none 
+        //      ========================================= RIGHT_LAYER =========================================
+         //      |       |       |       |       |       |              |       |       |       |       |      |
+		        &none &none &none &bt BT_CLR &bt BT_SEL 0   	        &bt BT_SEL 3 &bt BT_NXT &none &none &none 
+         //      |       |       |       |       |       |              |       |       |       |       |      |
+		        &none &none &none &none &bt BT_SEL 1                    &bt BT_SEL 4 &bt BT_PRV &none &none &none
+         //      |       |       |       |       |       |              |       |       |       |       |      |
+                &none &none &none &none &bt BT_SEL 2                    &none &none &none &none &none
+        //                              |       |        |              |       |       |
+				                        &none &none                     &none &none 
 		>;
 		};	
 		
 		tri_layer {
-        // Key 0| Key 2 | Key 3 | Key 4 | Key 5 | Key 10 | Key 9 | Key 8 | Key 7 | Key 6 |
-        //      |       |       |       |       |        |       |       |       |       |
-        //      |       |       |       |       |        |       |       |       |       |
-        //      |       |       |       |       |        |       |       |       |       |
-        //      |       |       |       |       |        |       |       |       |       |
 		bindings = <
-		&kp N1  &kp N2    &kp N3    &kp N4    &kp N5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
+        //      ========================================= RIGHT_LAYER =========================================
+         //      |       |       |       |       |       |              |       |       |       |       |      |
+		        &kp N1  &kp N2    &kp N3    &kp N4    &kp N5 			&trans &trans   &trans   &trans  &trans
+         //      |       |       |       |       |       |              |       |       |       |       |      |
+		        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  					&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+         //      |       |       |       |       |       |              |       |       |       |       |      |
+		        &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+        //                              |       |        |              |       |       |
+                    					&trans &trans                   &trans &trans 
 		>;
 		};	
         
