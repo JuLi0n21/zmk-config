@@ -125,10 +125,10 @@
                 compatible = "zmk,keymap";
                 default_layer {
 		            bindings = <
-                &mt NUM_1 Q &mt NUM_2 W &mt NUM_3 F &mt NUM_4 P &mt NUM_5 G 			&mt NUM_6 J &mt NUM_7 L &mt NUM_8 U &mt NUM_9 Y &mt NUM_0 BACKSPACE
+                &mt N1 Q &mt N2 W &mt N3 F &mt N4 P &mt N5 G 			&mt N6 J &mt N7 L &mt N8 U &mt N9 Y &mt N0 BACKSPACE
                 &mt HOME A &kp R &kp S &kp T &mt END D 			            &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
                 &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
-	                                    &kp LSFT &kp SPACE  			&kp LCTL &kp LSFT
+	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &kp LSHIFT
         >;                                                                      
 		}; 
 
@@ -142,7 +142,7 @@
         //      |       |       |       |       |       |               |       |       |      |       |       |
                 &kp TAB &none   &none   &none   &none				    &none   &none   &none  &none  &none
         //                              |       |       |               |       |       |
-	                                    &kp LSFT  &none  				&none   &kp LCTL
+	                                    &kp LSHIFT  &none  				&none   &kp LCTRL
         >;
 		};
 		
@@ -167,7 +167,7 @@
         //      |       |       |       |       |        |       |       |       |       |
         //      |       |       |       |       |        |       |       |       |       |
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
+		&kp N1  &kp N2    &kp N3    &kp N4    &kp N5 			&trans &trans   &trans   &trans  &trans
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
 		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
 					 &trans &trans  					&trans &trans 
