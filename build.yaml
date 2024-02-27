@@ -11,11 +11,6 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
-on: [push, pull_request, workflow_dispatch]
-
-jobs:
-  build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 ---
 include:
   - board: nice_nano_v2
@@ -24,3 +19,9 @@ include:
     shield: cradio_right
   - board: nice_nano_v2
     shield: settings_reset
+    
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
