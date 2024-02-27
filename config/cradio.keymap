@@ -99,27 +99,27 @@
         combo_Lock {
             timeout-ms = <20>;
             key-positions = <23 26>;
-            bindings = <&Lock>
+            bindings = <&Lock>;
         };
         combo_Screenshot {
             timeout-ms = <20>;
             key-positions = <22 27>;
-            bindings = <&Screenshot>
+            bindings = <&Screenshot>;
         };
         combo_oe {
             timeout-ms = <20>;
             key-positions = <16 20>;
-            bindings = <&oe>
+            bindings = <&oe>;
         };
         combo_ae {
             timeout-ms = <20>;
             key-positions = <10 16>;
-            bindings = <&ae>
+            bindings = <&ae>;
         };
         combo_ue {
             timeout-ms = <20>;
             key-positions = <7 16>;
-            bindings = <&ue>
+            bindings = <&ue>;
         };
     };
     
@@ -128,7 +128,7 @@
         wait-ms = <0>;
         tap-ms = <0>;
         bindings 
-         = <&macro_press &kp LEFT_WIN>
+        = <&macro_press &kp LEFT_WIN>
         , <&macro_press &kp LSHFT>
         , <&macro_tap &kp S>
         , <&macro_release &kp LEFT_WIN>
