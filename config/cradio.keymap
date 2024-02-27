@@ -21,77 +21,77 @@
     
  combos {
         compatible = "zmk,combos";
-        eScape {
+        combo_eScape {
             timeout-ms = <20>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        lEft_BRACKET {
+        combo_lEft_BRACKET {
             timeout-ms = <20>;
             key-positions = <10 11>;
             bindings = <&kp LEFT_BRACKET>;
         };
-        lEft_PARENTHESIS {
+        combo_lEft_PARENTHESIS {
             timeout-ms = <20>;
             key-positions = <11 12>;
             bindings = <&kp LEFT_PARENTHESIS>;
         };
-        lEft_BRACE {
+        combo_lEft_BRACE {
             timeout-ms = <20>;
             key-positions = <12 13>;
             bindings = <&kp LEFT_BRACE>;
         };
-        rIght_BRACKET {
+        combo_rIght_BRACKET {
             timeout-ms = <20>;
             key-positions = <18 19>;
             bindings = <&kp RIGHT_BRACKET>;
         };
-        rIght_PARENTHESIS {
+        combo_rIght_PARENTHESIS {
             timeout-ms = <20>;
             key-positions = <17 18>;
             bindings = <&kp RIGHT_PARENTHESIS>;
         };
-        rIght_BRACE {
+        combo_rIght_BRACE {
             timeout-ms = <20>;
             key-positions = <16 17>;
             bindings = <&kp RIGHT_BRACE>;
         };
-        dElete {
+        combo_dElete {
             timeout-ms = <20>;
             key-positions = <12 17>;
             bindings = <&kp DELETE>;
         };
-        eNter {
+        combo_eNter {
             timeout-ms = <20>;
             key-positions = <13 16>;
             bindings = <&kp ENTER>;
         };
-        wIn {
+        combo_wIn {
             timeout-ms = <20>;
             key-positions = <20 21>;
             bindings = <&kp LWIN>;
         };
-        mInus {
+        combo_mInus {
             timeout-ms = <20>;
             key-positions = <7 8>;
             bindings = <&kp MINUS>;
         };
-        eQual {
+        combo_eQual {
             timeout-ms = <20>;
             key-positions = <8 9>;
             bindings = <&kp EQUAL>;
         };
-        DEFAULTLAYER {
+        combo_DEFAULTLAYER {
             timeout-ms = <20>;
             key-positions = <4 5>;
             bindings = <&to DEFAULT>;
         };
-        BTLAYER {
+        combo_BTLAYER {
             timeout-ms = <20>;
             key-positions = <14 15>;
             bindings = <&to BT>;
         };
-        SPECIALLAYER {
+        combo_SPECIALLAYER {
             timeout-ms = <20>;
             key-positions = <24 25>;
             bindings = <&to SPECIAL>;
