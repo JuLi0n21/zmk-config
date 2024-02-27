@@ -18,81 +18,71 @@
     
  combos {
         compatible = "zmk,combos";
-        combo_esc {
+        ESCAPE {
             timeout-ms = <20>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-         combo_defaultlayer {
+        Defaultlayer {
             timeout-ms = <20>;
             key-positions = <31 32>;
             bindings = <&to 0>;
         };
-          combo_square_leftside {
+        LEFT_BRACKET {
             timeout-ms = <20>;
             key-positions = <10 11>;
             bindings = <&kp LEFT_BRACKET>;
         };
-        combo_curly_leftside {
+        LEFT_PARENTHESIS {
             timeout-ms = <20>;
             key-positions = <11 12>;
             bindings = <&kp LEFT_PARENTHESIS>;
         };
-        combo_brace_leftside {
+        LEFT_BRACE {
             timeout-ms = <20>;
             key-positions = <12 13>;
             bindings = <&kp LEFT_BRACE>;
         };
-        combo_square_rightside {
+        RIGHT_BRACKET {
             timeout-ms = <20>;
             key-positions = <18 19>;
             bindings = <&kp RIGHT_BRACKET>;
         };
-        combo_curly_rightside {
+        RIGHT_PARENTHESIS {
             timeout-ms = <20>;
             key-positions = <17 18>;
             bindings = <&kp RIGHT_PARENTHESIS>;
         };
-        combo_brace_rightside {
+        RIGHT_BRACE {
             timeout-ms = <20>;
             key-positions = <16 17>;
             bindings = <&kp RIGHT_BRACE>;
         };
-        /*combo_backspace {
-            timeout-ms = <20>;
-            key-positions = <13 16>;
-            bindings = <&kp BACKSPACE>;
-        }; */
-        combo_delete {
+        DELETE {
             timeout-ms = <20>;
             key-positions = <12 17>;
             bindings = <&kp DELETE>;
         };
-        combo_enter {
+        ENTER {
             timeout-ms = <20>;
             key-positions = <13 16>;
             bindings = <&kp ENTER>;
         };
-        combo_win {
+        WIN {
             timeout-ms = <20>;
             key-positions = <20 21>;
             bindings = <&kp LWIN>;
         };
-        combo_minus {
+        MINUS {
               timeout-ms = <20>;
             key-positions = <7 8>;
             bindings = <&kp MINUS>;
            };
-         combo_equal {
+        EQUAL {
             timeout-ms = <20>;
             key-positions = <8 9>;
             bindings = <&kp EQUAL>;
            };
-      //  combo_alt_f4 {
-        //    timeout-ms = <20>;
-          //  key-positions = <10 11 12 13>
-            // bindings = <&kp ALT, &kp F4>;
-        //}
     };
 
     //Numbers
