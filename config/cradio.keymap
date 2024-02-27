@@ -8,6 +8,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define BT 1
+#define SPECIAL 2
 
 &mt {
       flavor = "tap-preferred";
@@ -22,11 +25,6 @@
             timeout-ms = <20>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-        };
-        Defaultlayer {
-            timeout-ms = <20>;
-            key-positions = <31 32>;
-            bindings = <&to 0>;
         };
         LEFT_BRACKET {
             timeout-ms = <20>;
@@ -77,13 +75,34 @@
             timeout-ms = <20>;
             key-positions = <7 8>;
             bindings = <&kp MINUS>;
-           };
+        };
         EQUAL {
             timeout-ms = <20>;
             key-positions = <8 9>;
             bindings = <&kp EQUAL>;
-           };
+        };
+        DEFAULTLAYER {
+            timeout-ms = <20>;
+            key-positions = <4 5>;
+            bindings = <&to DEFAULT>;
+        };
+        BTLAYER {
+            timeout-ms = <20>;
+            key-positions = <14 15>;
+            bindings = <&to BT>;
+        };
+        SPECIALLAYER {
+            timeout-ms = <20>;
+            key-positions = <24 25>;
+            bindings = <&to SPECIAL>;
+        };
     };
+
+        //      ========================================= DEFAULT_LAYER =========================================
+        //      |   0   |       |       |       |   4   |               |   5   |       |       |       |   9  |
+        //      |   10  |       |       |       |   14  |               |   15  |       |       |       |   19 |
+        //      |   20  |       |       |       |   24  |               |   25  |       |       |       |   29 |
+        //                              |   30  |   31  |               |   32  |   33  |
 
         keymap {
                 compatible = "zmk,keymap";
@@ -100,46 +119,32 @@
 	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &kp LSHIFT
         >;                                                                      
 		}; 
-
-       	left_layer {
-        bindings = <
-        //      ========================================= LEFT_LAYER =========================================
-        //      |       |       |       |       |       |               |       |       |   ⬆   |       |      |
-                &kp ESC &kp F12 &kp F13 &kp 14  &kp F15 			    &kp F16 &kp F17 &kp UP &kp F18 &kp F19 
-        //      |       |       |       |       |       |               |       |  ⬅   |  ⬇   |   ⮕  |       |
-                &kp F20 &kp F21 &kp F22 &kp F23 &kp F24 		        &none  &kp LEFT &kp DOWN &kp RIGHT &none
-        //      |       |       |       |       |       |               |       |       |      |       |       |
-                &kp TAB &none   &none   &none   &none				    &none   &none   &none  &none  &none
-        //                              |       |       |               |       |       |
-	                                    &kp LSHIFT  &none  				&none   &kp LCTRL
-        >;
-		};
 		
-		right_layer {
+		bt_layer {
 		bindings = <
-        //      ========================================= RIGHT_LAYER =========================================
-         //      |       |       |       |       |       |              |       |       |       |       |      |
-		        &none &none &none &bt BT_CLR &bt BT_SEL 0   	        &bt BT_SEL 3 &bt BT_NXT &none &none &none 
-         //      |       |       |       |       |       |              |       |       |       |       |      |
-		        &none &none &none &none &bt BT_SEL 1                    &bt BT_SEL 4 &bt BT_PRV &none &none &none
-         //      |       |       |       |       |       |              |       |       |       |       |      |
-                &none &none &none &none &bt BT_SEL 2                    &none &none &none &none &none
-        //                              |       |        |              |       |       |
+        //      ========================================= BLUETOOTH_LAYER =========================================
+        //      |       |       |       |       |       |               |       |       |       |       |      |
+		        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   	&none &none &none &none &none 
+        //      |       |       |       |       |       |               |       |       |       |       |      |
+		        &none &none &none &none &bt BT_CLR_ALL                  &none &none &none &none &none
+        //      |       |       |       |       |       |               |       |       |       |       |      |
+                &none &bt BT_PRV &none &bt BT_NXT &none                 &none &none &none &none &none
+        //                              |       |       |               |       |       |
 				                        &none &none                     &none &none 
 		>;
 		};	
 		
-		tri_layer {
+		special_layer {
 		bindings = <
-        //      ========================================= RIGHT_LAYER =========================================
-         //      |       |       |       |       |       |              |       |       |       |       |      |
-		        &kp N1  &kp N2    &kp N3    &kp N4    &kp N5 			&trans &trans   &trans   &trans  &trans
-         //      |       |       |       |       |       |              |       |       |       |       |      |
-		        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  					&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-         //      |       |       |       |       |       |              |       |       |       |       |      |
+        //      ========================================= SPECIAL_LAYER =========================================
+        //      |       |       |       |       |       |               |       |       |       |       |      |
+		        &kp N1  &kp N2    &kp N3    &kp N4    &kp N5 		    &trans &trans   &trans   &trans  &trans
+        //      |       |       |       |       |       |               |       |       |       |       |      |
+		        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  				    &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+        //      |       |       |       |       |       |               |       |       |       |       |      |
 		        &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
         //                              |       |        |              |       |       |
-                    					&trans &trans                   &trans &trans 
+                    					&none &none                     &none &none 
 		>;
 		};	
         
