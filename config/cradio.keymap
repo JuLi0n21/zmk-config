@@ -140,7 +140,7 @@
         tap-ms = <0>;
         bindings 
         = <&macro_press &kp LEFT_WIN>
-        , <&macro_tap &kp S>
+        , <&macro_tap &kp L>
         , <&macro_release &kp LEFT_WIN>
         ;
     )
