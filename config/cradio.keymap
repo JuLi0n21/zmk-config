@@ -66,21 +66,6 @@
             key-positions = <13 16>;
             bindings = <&kp ENTER>;
         };
-        combo_wIn {
-            timeout-ms = <20>;
-            key-positions = <20 21>;
-            bindings = <&kp LWIN>;
-        };
-        combo_mInus {
-            timeout-ms = <20>;
-            key-positions = <7 8>;
-            bindings = <&kp MINUS>;
-        };
-        combo_eQual {
-            timeout-ms = <20>;
-            key-positions = <8 9>;
-            bindings = <&kp EQUAL>;
-        };
         combo_DEFAULTLAYER {
             timeout-ms = <20>;
             key-positions = <4 5>;
@@ -106,21 +91,6 @@
             key-positions = <22 27>;
             bindings = <&Screenshot>;
         };
-        combo_oe {
-            timeout-ms = <20>;
-            key-positions = <16 20>;
-            bindings = <&oe>;
-        };
-        combo_ae {
-            timeout-ms = <20>;
-            key-positions = <10 16>;
-            bindings = <&ae>;
-        };
-        combo_ue {
-            timeout-ms = <20>;
-            key-positions = <7 16>;
-            bindings = <&ue>;
-        };
     };
     
     macros {
@@ -144,33 +114,6 @@
         , <&macro_release &kp LEFT_WIN>
         ;
     )
-    ZMK_MACRO(oe,
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings 
-        = <&macro_press &kp LALT>
-        , <&macro_tap &kp N1 &kp N4 &kp N8>
-        , <&macro_release &kp LALT>
-        ;
-    )
-    ZMK_MACRO(ae,
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings 
-        = <&macro_press &kp LALT>
-        , <&macro_tap &kp N1 &kp N3 &kp N2>
-        , <&macro_release &kp LALT>
-        ;
-    )
-    ZMK_MACRO(ue,
-        wait-ms = <0>;
-        tap-ms = <0>;
-        bindings 
-        = <&macro_press &kp LALT>
-        , <&macro_tap &kp N1 &kp N2 &kp N9>
-        , <&macro_release &kp LALT>
-        ;
-    )
     };
 
         //      ========================================= DEFAULT_LAYER =========================================
@@ -181,17 +124,17 @@
 
         keymap {
                 compatible = "zmk,keymap";
-                default_layer {
+                default_layer { 
 		            bindings = <
         //      ========================================= DEFAULT_LAYER =========================================
-        //      |  Q 1  |  W 2  |  F 3  |  P 4  |  G 5  |               |  J 6  |  L 7  |  U 8  |  9 Y  |  <- 0|
-                &mt N1 Q &mt N2 W &mt N3 F &mt N4 P &mt N5 G 			&mt N6 J &mt N7 L &mt N8 U &mt N9 Y &mt N0 BACKSPACE
+        //      |  Q    |  W    |  F    |  P    |  G    |               |  J    |  L    |  U    |  Y    |  <-  |
+                &kp Q   &kp W   &kp F   &kp P   &kp G 			        &kp J   &kp L   &kp U   &kp Y   &kp BACKSPACE
         //      | A HOME|   R   |   S   |   T   | D END |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O ;  |
-                &mt HOME A &kp R &kp S &kp T &mt END D 			        &mt LEFT H   &mt DOWN N   &mt UP E   &mt RIGHT I   &mt SEMI O
+                &mt HOME A &kp R &kp S &kp T &mt END D 			        &kp H   &kp N   &kp E   &kp I   &kp O
         //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M ' |  , '  |  . `  |  / | |
-                &mt TAB Z &mt LALT X &kp C &kp V &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
+                &kp Z   &kp X   &kp C   &kp V   &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
         //                              | lsft  | SPACE |               | RSFT | lctrl |
-	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &kp LSHIFT
+	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &mo SPECIAL
         >;                                                                      
 		}; 
 		
@@ -213,13 +156,13 @@
 		bindings = <
         //      ========================================= SPECIAL_LAYER =========================================
         //      |       |       |       |       |       |               |       |       |       |       |      |
-		        &kp N1  &kp N2    &kp N3    &kp N4    &kp N5 		    &trans &trans   &trans   &trans  &trans
+		        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5 		            &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
         //      |       |       |       |       |       |               |       |       |       |       |      |
-		        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  				    &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+		        &kp LEFT &kp DOWN &kp UP &kp RIGHT &none  				&none &none  &none &kp MINUS &kp EQUAL 
         //      |       |       |       |       |       |               |       |       |       |       |      |
-		        &bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+		        &kp TAB  &kp LWIN &kp LALT &none &none                  &none &none  &none  &kp RWIN &none  
         //                              |       |        |              |       |       |
-                    					&none &none                     &none &none 
+                    					&trans &trans                   &trans &none 
 		>;
 		};	
         
