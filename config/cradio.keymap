@@ -130,9 +130,9 @@
         //      |  Q    |  W    |  F    |  P    |  G    |               |  J    |  L    |  U    |  Y    |  <-  |
                 &kp Q   &kp W   &kp F   &kp P   &kp G 			        &kp J   &kp L   &kp U   &kp Y   &kp BACKSPACE
         //      | A HOME|   R   |   S   |   T   | D END |               |  H ⬅ |  N ⬇  |  E ⬆  |  I  ⮕|  O ;  |
-                &mt HOME A &kp R &kp S &kp T &mt END D 			        &kp H   &kp N   &kp E   &kp I   &kp O
-        //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M ' |  , '  |  . `  |  / | |
-                &kp Z   &kp X   &kp C   &kp V   &kp B				    &kp K   &mt SEMI M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
+                &mt HOME A &kp R &kp S &kp T &mt END D 			        &kp H   &kp N   &kp E   &kp I   &mt SEMICOLON O
+        //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M  |  , '  |  . `  |  / | |
+                &kp Z   &kp X   &kp C   &kp V   &kp B				    &kp K   &kp M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
         //                              | lsft  | SPACE |               | RSFT | lctrl |
 	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &mo SPECIAL
         >;                                                                      
