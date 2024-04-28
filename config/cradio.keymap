@@ -134,7 +134,7 @@
         //      | Z TAB | X ALT |   C   |   V   |   B   |               |   K   |   M  |  , '  |  . `  |  / | |
                 &kp Z   &kp X   &kp C   &kp V   &kp B				    &kp K   &kp M   &mt SINGLE_QUOTE COMMA  &mt GRAVE DOT &mt BACKSLASH SLASH
         //                              | lsft  | SPACE |               | RSFT | lctrl |
-	                                    &kp LSHIFT &kp SPACE  			&kp LCTRL &mo SPECIAL
+	                                    &kp LSHIFT &kp LCTRL 			&kp RCTRL &mo SPECIAL
         >;                                                                      
 		}; 
 		
@@ -160,9 +160,9 @@
         //      |       |       |       |       |       |               |       |       |       |       |      |
 		        &none   &kp LEFT &kp DOWN &kp UP &kp RIGHT  				&none &none  &none &kp MINUS &kp EQUAL 
         //      |       |       |       |       |       |               |       |       |       |       |      |
-		        &kp TAB  &kp LWIN &kp LALT &none &none                  &none &none  &none  &kp RWIN &none  
+		        &kp TAB  &kp LWIN &kp LALT &none &none                  &none   &none   &kp RALT &kp RWIN &none  
         //                              |       |        |              |       |       |
-                    					&trans &trans                   &trans &none 
+                    					&trans &kp SPACE                   &trans &none 
 		>;
 		};	
         
